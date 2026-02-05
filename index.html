@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AKA Health Tip</title>
+  <style>
+    body {
+      background-color: #fddde6; /* AKA pink */
+      color: #006644; /* AKA green */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 40vh;
+    }
+  </style>
+</head>
+<body>
+  <p>Loading your health tip 💕💚 …</p>
+
+  <script>
+    // List of slide IDs
+    const slides = [
+      "id.p1","id.p2","id.p3","id.p4","id.p5",
+      "id.p6","id.p7","id.p8","id.p9","id.p10",
+      "id.p11","id.p12","id.p13","id.p14","id.p15",
+      "id.p16","id.p17","id.p18","id.p19","id.p20",
+      "id.p21","id.p22","id.p23","id.p24","id.p25",
+      "id.p26","id.p27","id.p28","id.p29","id.p30",
+      "id.p31","id.p32","id.p33","id.p34","id.p35",
+      "id.p36","id.p37","id.p38","id.p39","id.p40",
+      "id.p41","id.p42","id.p43","id.p44","id.p45",
+      "id.p46","id.p47","id.p48","id.p49","id.p50",
+      "id.p51","id.p52","id.p53","id.p54","id.p55"
+    ];
+
+    const presentationId = "1wKtb3A_fVvIqmWGWVa87iGgAbCTvv5NP";
+
+    const randomSlide = slides[Math.floor(Math.random() * slides.length)];
+    const url = `https://docs.google.com/presentation/d/${presentationId}/present?slide=${randomSlide}`;
+
+    window.location.replace(url);
+  </script>
+</body>
+</html>
